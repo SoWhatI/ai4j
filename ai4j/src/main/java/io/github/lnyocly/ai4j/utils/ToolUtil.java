@@ -430,6 +430,7 @@ public class ToolUtil {
      * 获取所有工具（自动识别用户上下文）
      */
     public static List<Tool> getAllTools(List<String> functionList, List<String> mcpServerIds) {
+        ensureInitialized();
         List<Tool> allTools = new ArrayList<>();
 
         // 获取传统Function工具
